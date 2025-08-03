@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probleme OJI & ONI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <div class="top-nav">
+                <h1>Titlu</h1>
+                <button id="night-day" class="Buton-toggle-backround">Buton_toggle_backround</button>
+            </div>
+            <p>Checklist pentru probleme olimpiada</p>
+        </header>
+        <main>
+            <div class="progress">
+                <div class="bar">
+                    <div class="bar-info">
+                        <span>progres oji</span>
+                        <span id="oji-problems">0/0</span>
+                    </div>
+                    <div class="bar-design">
+                        <div class="bar-progress" id="oji-progress">Bara</div>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="bar-info">
+                        <span>progres oni</span>
+                        <span id="oni-problems">0/0</span>
+                    </div>
+                    <div class="bar-design">
+                        <div class="bar-progress" id="oni-progress">Bara</div>
+                    </div>
+                </div>
+            </div>
+            <div class="filters">
+                <div class="group">
+                    <label for="search-input">Cauta dupa nume :</label>
+                    <input type="text" id="search-input">
+                </div>
+                <div class="group">
+                    <label for="year-filter">Filtreaza dupa an:</label>
+                    <select id="year-filter">
+                        <option value="all">Toti anii</option>
+                    </select>
+                </div>
+                <div class="group">
+                    <label for="class-filter">Filtreaza dupa clasa:</label>
+                    <select id="class-filter">
+                        <option value="all">Toate clasele</option>
+                    </select>
+                </div>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rezolvat</th>
+                            <th>Nume Problema</th>
+                            <th>Etapa</th>
+                            <th>An</th>
+                            <th>Clasa</th>
+                            <th>Soluție</th>
+                        </tr>
+                    </thead>
+                    <tbody id="problems-table">
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
